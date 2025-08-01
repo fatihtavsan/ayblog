@@ -1,0 +1,74 @@
+.ql-editor {
+  font-family: "Playfair Display", serif !important;
+  color: #333333 !important;
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+}
+
+.ql-container.ql-snow {
+  border: 1px solid #e0cbb3;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  background: #fffaf4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  min-height: 200px;
+}
+
+.ql-toolbar.ql-snow {
+  border: 1px solid #e0cbb3;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  background-color: #f5e6d5;
+  padding: 8px;
+}
+
+.btn-soft {
+  background-color: #BEA888;
+  color: #4f4537;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-soft:hover {
+  background-color: #e4caa2;
+}
+
+.btn-soft:active {
+  transform: scale(0.97);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.btn-soft:disabled {
+  background-color: #f2d8c2;
+  color: #4f4537;
+  cursor: not-allowed;
+}
+
+.input-soft {
+  background-color: #fffaf4;
+  border: 1px solid #e0cbb3;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #4f4537;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  width: 100%;
+}
+
+.input-soft::placeholder {
+  color: #4f4537;
+  font-style: italic;
+}
+
+.input-soft:focus {
+  border-color: #BEA888;
+  box-shadow: 0 0 0 4px rgba(245, 201, 164, 0.5);
+}

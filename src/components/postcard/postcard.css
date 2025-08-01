@@ -1,0 +1,21 @@
+.content{
+    height: 250px;
+    padding: 1rem;
+    border: 1px solid #4F4537;
+    transition: box-shadow 0.3s ease;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.content:hover {
+    box-shadow: 0 0 20px rgba(79, 69, 55, 0.25); /* merkezden dışa yayılır */
+}
+
+.main-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.postcard-link{
+    color: #333333;
+}

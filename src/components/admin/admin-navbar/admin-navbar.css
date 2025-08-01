@@ -1,0 +1,20 @@
+.admin-nav {
+  background-color: #bea888 !important;
+  border-bottom: 1px solid #4f4537;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.admin-nav .admin-nav-btn {
+  border: 1px solid #4f4537;
+  background-color: #bea888 !important;
+  color: #4f4537;
+  font-size: 1.25rem;
+}
+
+.admin-nav .admin-nav-btn:hover {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.admin-nav .admin-nav-btn:active {
+  border: 1px solid #4f4537;
+}

@@ -1,0 +1,76 @@
+.post-content {
+  line-height: 1.6 !important;
+  height: auto;
+}
+
+.post-content img {
+  width: 100%; /* container'a göre genişlik */
+  height: auto; /* orantılı yükseklik */
+  display: block;
+  margin-top: 2em;
+  border-radius: 0.25rem;
+}
+
+.ql-editor iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  border-radius: 0.25rem;
+}
+
+.ql-editor blockquote {
+  border-left: 4px solid #ccc;
+  padding-left: 1em;
+  margin: 1em 0;
+  color: #666;
+}
+
+.ql-editor > figure:first-child > img {
+  margin-top: 0 !important;
+}
+
+.ql-editor figcaption {
+  font-size: 0.85rem;
+  color: #555;
+  text-align: center;
+  line-height: 1.6;
+  font-style: italic;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+}
+
+.post-content p,
+.ql-editor p {
+  font-family: "Lora", serif !important;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.footer-line {
+  height: 2px;
+  background-color: #4f4537;
+  border: none;
+}
+
+.tagbadge {
+  background-color: #bea888 !important;
+  font-weight: normal;
+  font-size: 1.25rem;
+  border: 1px solid #4f4537;
+  justify-items: center;
+  color: #4f4537;
+}
+
+@media (min-width: 768px) {
+  .post-content p,
+  .ql-editor p {
+    font-size: 1.25rem;
+  }
+
+  .ql-editor figcaption {
+    font-size: 1rem;
+  }
+}

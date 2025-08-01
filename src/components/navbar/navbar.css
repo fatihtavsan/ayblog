@@ -1,0 +1,53 @@
+.navbarstyle {
+  height: 275px;
+  background-color: #bea888 !important;
+  border-bottom: 1px solid #4f4537;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-toggler {
+  border: 1px solid #4f4537;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: #a39075; /* İstediğin renk */
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    position: relative; /* z-index etkili olması için */
+    z-index: 1050; /* Bootstrap modal z-index’ine yakın bir değer */
+  }
+}
+
+@media (min-width: 991.99px) {
+  .customnav {
+    height: 275px;
+    align-items: flex-end;
+  }
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.3); /* isteğe bağlı koyu ton */
+  z-index: 1040; /* Menüden biraz daha az üstte */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Menü açıldığında görünür */
+.blur-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
