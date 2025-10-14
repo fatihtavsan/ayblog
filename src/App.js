@@ -23,7 +23,7 @@ function AppLayout() {
     <>
       {isAdminRoute ? <AdminNavbar /> : <Navbar />}
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/index.html" element={<HomePage />} />
         <Route path="/post/:id" element={<PostPage />} />
         <Route path="/taglist" element={<TaglistPage />} />
         <Route path="/taglist/:tagName?" element={<TaglistPage />} />
