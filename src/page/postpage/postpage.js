@@ -6,6 +6,7 @@ import Badge from "react-bootstrap/Badge";
 
 function PostPage() {
   const { id } = useParams();
+  const API = process.env.REACT_APP_API_URL;
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -15,7 +16,7 @@ function PostPage() {
     const fetchPost = async () => {
       try {
         setLoading(true);
-        const res = await fetch(`http://localhost:3001/posts/${id}`);
+        const res = await fetch(`${API}/posts/${id}`);
         if (!res.ok) throw new Error("Yazı bulunamadı");
 
         const postData = await res.json();

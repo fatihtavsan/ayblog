@@ -23,7 +23,7 @@ function BasicExample() {
           />
           <Navbar.Brand
             as={Link}
-            to="/index.html"
+            to="/*"
             className=" position-absolute start-50 translate-middle-x m-0 logom"
             href="#home"
           >
