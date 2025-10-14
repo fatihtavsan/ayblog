@@ -1,5 +1,5 @@
 import React from "react";
-import "./custom.cssnp";
+import "./custom.css";
 import {
   BrowserRouter as Router,
   Routes,
